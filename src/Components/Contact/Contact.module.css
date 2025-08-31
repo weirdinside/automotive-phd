@@ -1,0 +1,105 @@
+.contact_section {
+  color: inherit;
+  font-family: "Special Gothic Expanded One";
+  font-weight: 800;
+  justify-content: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  color: black;
+  background-color: rgb(227, 232, 229);
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form {
+  width: 80%;
+  display: flex;
+  max-width: min(100%, 1000px);
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.contact_form_label {
+  font-size: clamp(12px, 3vw, 21px);
+}
+
+.contact_form_input {
+  border: none;
+  background-color: transparent;
+  font-size: clamp(12px, 3vw, 21px);
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.contact_heading {
+  padding: 20px;
+  margin: 0 auto;
+  font-size: clamp(30px, 4vw, 50px);
+}
+
+.contact_description {
+  font-size: clamp(14px, 3vw, 23px);
+  padding: 0;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.contact_form_select,
+.contact_form_textarea {
+  background-color: transparent;
+  color: black;
+  font-size: clamp(12px, 3vw, 21px);
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px 0;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact_form_select:focus,
+.contact_form_textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #05ffc5;
+}
+
+.contact_form_input:focus {
+  outline: none;
+  color: black;
+  border-bottom: 2px solid #05ffc5;
+}
+
+.option {
+  background-color: #141a17;
+  color: black;
+}
+
+.contact_submit_button {
+  font-size: clamp(14px, 2.6vw, 24px);
+  font-family: "Special Gothic Expanded One";
+  font-weight: 500;
+  color: white;
+  padding: 8px 32px;
+  margin: 20px auto 10px;
+  border: none;
+  border-radius: 0;
+  width: max-content;
+  cursor: pointer;
+  clip-path: polygon(15px 0, 100% 0, calc(100% - 15px) 100%, 0% 100%);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: #1c4d4164;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.contact_submit_button:hover {
+  scale: 1.1;
+  background: #30b193;
+  box-shadow: 0px 0px 10px #000;
+  animation: none;
+}
